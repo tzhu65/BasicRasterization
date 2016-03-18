@@ -7,7 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EACE9F461C9C4C710044E72B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EACE9F451C9C4C710044E72B /* main.cpp */; };
+		EACE9F4D1C9C4C900044E72B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACE9F4C1C9C4C900044E72B /* OpenGL.framework */; };
+		EACE9F4F1C9C4C960044E72B /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACE9F4E1C9C4C960044E72B /* GLUT.framework */; };
+		EACE9F661C9C4EA30044E72B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EACE9F651C9C4EA30044E72B /* main.cpp */; };
+		EACE9F681C9C4EB40044E72B /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EACE9F671C9C4EB40044E72B /* camera.cpp */; };
+		EACE9F6A1C9C4EC50044E72B /* perspective.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EACE9F691C9C4EC50044E72B /* perspective.cpp */; };
+		EACE9F6C1C9C4ED20044E72B /* viewport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EACE9F6B1C9C4ED20044E72B /* viewport.cpp */; };
+		EACE9F6E1C9C4EE10044E72B /* transformer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EACE9F6D1C9C4EE10044E72B /* transformer.cpp */; };
+		EACE9F701C9C4EEC0044E72B /* surface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EACE9F6F1C9C4EEC0044E72B /* surface.cpp */; };
+		EACE9F721C9C4EFA0044E72B /* light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EACE9F711C9C4EFA0044E72B /* light.cpp */; };
+		EACE9F741C9C4F050044E72B /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EACE9F731C9C4F050044E72B /* material.cpp */; };
+		EACE9F761C9C4F110044E72B /* sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EACE9F751C9C4F110044E72B /* sphere.cpp */; };
+		EACE9F781C9C4F1B0044E72B /* vertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EACE9F771C9C4F1B0044E72B /* vertex.cpp */; };
+		EACE9F7A1C9C4F260044E72B /* scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EACE9F791C9C4F260044E72B /* scene.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +36,29 @@
 
 /* Begin PBXFileReference section */
 		EACE9F421C9C4C710044E72B /* Basic Rasterization */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Basic Rasterization"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EACE9F451C9C4C710044E72B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EACE9F4C1C9C4C900044E72B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		EACE9F4E1C9C4C960044E72B /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		EACE9F5B1C9C4E0D0044E72B /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		EACE9F5C1C9C4E220044E72B /* perspective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perspective.h; sourceTree = "<group>"; };
+		EACE9F5D1C9C4E2C0044E72B /* viewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = viewport.h; sourceTree = "<group>"; };
+		EACE9F5E1C9C4E390044E72B /* transformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transformer.h; sourceTree = "<group>"; };
+		EACE9F5F1C9C4E510044E72B /* surface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = surface.h; sourceTree = "<group>"; };
+		EACE9F601C9C4E5B0044E72B /* light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = light.h; sourceTree = "<group>"; };
+		EACE9F611C9C4E650044E72B /* material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = material.h; sourceTree = "<group>"; };
+		EACE9F621C9C4E6F0044E72B /* sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
+		EACE9F631C9C4E7A0044E72B /* scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scene.h; sourceTree = "<group>"; };
+		EACE9F641C9C4E830044E72B /* vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vertex.h; sourceTree = "<group>"; };
+		EACE9F651C9C4EA30044E72B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EACE9F671C9C4EB40044E72B /* camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = camera.cpp; sourceTree = "<group>"; };
+		EACE9F691C9C4EC50044E72B /* perspective.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = perspective.cpp; sourceTree = "<group>"; };
+		EACE9F6B1C9C4ED20044E72B /* viewport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = viewport.cpp; sourceTree = "<group>"; };
+		EACE9F6D1C9C4EE10044E72B /* transformer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = transformer.cpp; sourceTree = "<group>"; };
+		EACE9F6F1C9C4EEC0044E72B /* surface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = surface.cpp; sourceTree = "<group>"; };
+		EACE9F711C9C4EFA0044E72B /* light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = light.cpp; sourceTree = "<group>"; };
+		EACE9F731C9C4F050044E72B /* material.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = material.cpp; sourceTree = "<group>"; };
+		EACE9F751C9C4F110044E72B /* sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sphere.cpp; sourceTree = "<group>"; };
+		EACE9F771C9C4F1B0044E72B /* vertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vertex.cpp; sourceTree = "<group>"; };
+		EACE9F791C9C4F260044E72B /* scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scene.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EACE9F4F1C9C4C960044E72B /* GLUT.framework in Frameworks */,
+				EACE9F4D1C9C4C900044E72B /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +77,8 @@
 		EACE9F391C9C4C710044E72B = {
 			isa = PBXGroup;
 			children = (
+				EACE9F4E1C9C4C960044E72B /* GLUT.framework */,
+				EACE9F4C1C9C4C900044E72B /* OpenGL.framework */,
 				EACE9F441C9C4C710044E72B /* Basic Rasterization */,
 				EACE9F431C9C4C710044E72B /* Products */,
 			);
@@ -57,9 +95,93 @@
 		EACE9F441C9C4C710044E72B /* Basic Rasterization */ = {
 			isa = PBXGroup;
 			children = (
-				EACE9F451C9C4C710044E72B /* main.cpp */,
+				EACE9F501C9C4DB60044E72B /* include */,
+				EACE9F551C9C4DB60044E72B /* src */,
 			);
 			path = "Basic Rasterization";
+			sourceTree = "<group>";
+		};
+		EACE9F501C9C4DB60044E72B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EACE9F511C9C4DB60044E72B /* transform */,
+				EACE9F521C9C4DB60044E72B /* world */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		EACE9F511C9C4DB60044E72B /* transform */ = {
+			isa = PBXGroup;
+			children = (
+				EACE9F5B1C9C4E0D0044E72B /* camera.h */,
+				EACE9F5C1C9C4E220044E72B /* perspective.h */,
+				EACE9F5D1C9C4E2C0044E72B /* viewport.h */,
+				EACE9F5E1C9C4E390044E72B /* transformer.h */,
+			);
+			path = transform;
+			sourceTree = "<group>";
+		};
+		EACE9F521C9C4DB60044E72B /* world */ = {
+			isa = PBXGroup;
+			children = (
+				EACE9F531C9C4DB60044E72B /* objects */,
+				EACE9F631C9C4E7A0044E72B /* scene.h */,
+			);
+			path = world;
+			sourceTree = "<group>";
+		};
+		EACE9F531C9C4DB60044E72B /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				EACE9F5F1C9C4E510044E72B /* surface.h */,
+				EACE9F601C9C4E5B0044E72B /* light.h */,
+				EACE9F611C9C4E650044E72B /* material.h */,
+				EACE9F621C9C4E6F0044E72B /* sphere.h */,
+				EACE9F641C9C4E830044E72B /* vertex.h */,
+			);
+			path = objects;
+			sourceTree = "<group>";
+		};
+		EACE9F551C9C4DB60044E72B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EACE9F561C9C4DB60044E72B /* transform */,
+				EACE9F571C9C4DB60044E72B /* world */,
+				EACE9F651C9C4EA30044E72B /* main.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EACE9F561C9C4DB60044E72B /* transform */ = {
+			isa = PBXGroup;
+			children = (
+				EACE9F671C9C4EB40044E72B /* camera.cpp */,
+				EACE9F691C9C4EC50044E72B /* perspective.cpp */,
+				EACE9F6B1C9C4ED20044E72B /* viewport.cpp */,
+				EACE9F6D1C9C4EE10044E72B /* transformer.cpp */,
+			);
+			path = transform;
+			sourceTree = "<group>";
+		};
+		EACE9F571C9C4DB60044E72B /* world */ = {
+			isa = PBXGroup;
+			children = (
+				EACE9F581C9C4DB60044E72B /* objects */,
+				EACE9F791C9C4F260044E72B /* scene.cpp */,
+			);
+			path = world;
+			sourceTree = "<group>";
+		};
+		EACE9F581C9C4DB60044E72B /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				EACE9F6F1C9C4EEC0044E72B /* surface.cpp */,
+				EACE9F711C9C4EFA0044E72B /* light.cpp */,
+				EACE9F731C9C4F050044E72B /* material.cpp */,
+				EACE9F751C9C4F110044E72B /* sphere.cpp */,
+				EACE9F771C9C4F1B0044E72B /* vertex.cpp */,
+			);
+			path = objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +240,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EACE9F461C9C4C710044E72B /* main.cpp in Sources */,
+				EACE9F681C9C4EB40044E72B /* camera.cpp in Sources */,
+				EACE9F6C1C9C4ED20044E72B /* viewport.cpp in Sources */,
+				EACE9F661C9C4EA30044E72B /* main.cpp in Sources */,
+				EACE9F781C9C4F1B0044E72B /* vertex.cpp in Sources */,
+				EACE9F761C9C4F110044E72B /* sphere.cpp in Sources */,
+				EACE9F6E1C9C4EE10044E72B /* transformer.cpp in Sources */,
+				EACE9F741C9C4F050044E72B /* material.cpp in Sources */,
+				EACE9F721C9C4EFA0044E72B /* light.cpp in Sources */,
+				EACE9F6A1C9C4EC50044E72B /* perspective.cpp in Sources */,
+				EACE9F701C9C4EEC0044E72B /* surface.cpp in Sources */,
+				EACE9F7A1C9C4F260044E72B /* scene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +339,11 @@
 		EACE9F4A1C9C4C710044E72B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+					"-I",
+					/usr/local/include/eigen3/,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -214,6 +351,11 @@
 		EACE9F4B1C9C4C710044E72B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+					"-I",
+					/usr/local/include/eigen3/,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
